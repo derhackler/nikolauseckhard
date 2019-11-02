@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="u-wrapper">
+<div class="u-padding">
+<div class="spacer"></div>
+<article>
+  {{ partial "heading.html" . }}
+  {{ .Content }}
+  {{ partial "comments.html" . }}
+</article>
+</div>
+</div>
+
+{{ end }}

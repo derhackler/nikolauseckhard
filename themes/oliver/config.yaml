@@ -1,0 +1,28 @@
+params:
+  color: gray           # Any color in CSS syntax
+  width: 42rem          # Any length in CSS syntax
+  footer: 
+  rss: 
+  summaries: false      # Set to true to show summaries of posts on homepage
+  divider: '\2015\2015' # Set to false to remove divider below posts on homepage
+  schema: false         # Set to true to add Schema.org metadata
+  opengraph: false      # Set to true to add Open Graph metadata
+  twittercards: false   # Set to true to add Twitter Cards metadata
+  utterances:
+    repo:               # Set to Utterances repo URL to add Utterances comments
+    issueterm: pathname
+    theme: github-light
+  netlify:
+    honeypot: false     # Set to true to add honeypot field in contact form
+    recaptcha: false    # Set to true to add recaptcha challenge in contact form
+  mainSecions:
+    - project
+
+menu:
+  nav:
+  - name: index
+    url: index/
+    weight: 1
+  - name: about
+    url: about/
+    weight: 2

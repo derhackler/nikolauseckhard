@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ hugo.Generator }}
+  {{ if site.Params.schema }}{{ template "_internal/schema.html" . }}{{ end }}
+  {{ if site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
+  {{ if site.Params.twittercards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
+  <title>
+    {{ if eq .Title site.Title }}
+    {{ site.Title }}
+    {{ else }}
+    {{ with .Title }}{{ . }} | {{ end }}{{ site.Title }}
+    {{ end }}
+  </title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  
+  {{ resources.Get "css/base.temp.css" | resources.ExecuteAsTemplate "css/base.css" . | minify | fingerprint | .Page.Scratch.SetInMap "css" "base" }}
+  
+  {{ block "loadshortcodes" . }}{{ with .Content }}{{ end }}{{ end }}
+  {{ range .Scratch.GetSortedMapValues "css" }}
+  <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+  {{ range .Scratch.GetSortedMapValues "js" }}
+  <script defer src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+  {{ end }}
+  {{ block "in_header" . }}{{ end }}
+</head>
+<body>
+  {{ partialCached "banner.html" . }}
+  {{ block "before_main" . }}{{ end }}
+  <main>
+
+        {{ block "main" . }}{{ end }}
+
+  </main>
+  {{ partialCached "footer.html" . }}
+</body>
+</html>

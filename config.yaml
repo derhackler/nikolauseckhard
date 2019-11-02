@@ -1,7 +1,7 @@
-baseURL: http://example.org/
+baseURL: https://nikolaus-eckhard.onrender.com/
 languageCode: en-us
 title: Nikolaus Eckhard
-theme: hugo-flex
+theme: oliver
 assetDir: content
 taxonomies:
   tag: tags
