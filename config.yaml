@@ -1,0 +1,7 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Nikolaus Eckhard
+theme: hugo-flex
+assetDir: content
+taxonomies:
+  tag: tags
