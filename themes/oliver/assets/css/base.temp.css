@@ -196,6 +196,9 @@ figure {
 
 }
 
+article a {
+  color: black;
+}
 .u-clickable {
   text-decoration: none;
   display: inline-block;
