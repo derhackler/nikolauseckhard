@@ -22,30 +22,7 @@
   {{ .Scratch.Set "paginator" $paginator }}
 {{ end }}
 
-{{ define "before_main"}}
-<div class="page-centered-element">
-    <div class="content">
-      {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
-      {{ $imgpath := path.Join .Dir .Params.image }}
-      {{ $contentid := .UniqueID }}
-      {{ with .Params.image }}
-          {{ if fileExists $imgpath }}
-              {{ with resources.Get $imgpath }}
-                  {{ $thumb := (.Resize "720x").RelPermalink }}
-                  <div class="background-content" id="background-for-{{ $contentid }}">
-                    <img src="{{ $thumb }}">
-                  </div>
-              {{ end }}
-          {{ end }}
-      {{ end }}
 
-{{ end }}
-    </div>
-  </div>
-
-
-
-{{end}}
 
 
 
@@ -119,3 +96,25 @@ function random(number) {
 }
 </script>
 {{ end }}
+
+{{ define "after_main"}}
+<div class="page-centered-element">
+    <div class="content">
+      {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
+      {{ $imgpath := path.Join .Dir .Params.image }}
+      {{ $contentid := .UniqueID }}
+      {{ with .Params.image }}
+          {{ if fileExists $imgpath }}
+              {{ with resources.Get $imgpath }}
+                  {{ $thumb := (.Resize "720x").RelPermalink }}
+                  <div class="background-content" id="background-for-{{ $contentid }}">
+                    <img src="{{ $thumb }}">
+                  </div>
+              {{ end }}
+          {{ end }}
+      {{ end }}
+
+{{ end }}
+    </div>
+  </div>
+{{end}}

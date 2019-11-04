@@ -29,12 +29,13 @@
 </head>
 <body>
   {{ partialCached "banner.html" . }}
-  {{ block "before_main" . }}{{ end }}
+  
   <main>
 
         {{ block "main" . }}{{ end }}
 
   </main>
+  {{ block "after_main" . }}{{ end }}
   {{ partialCached "footer.html" . }}
 </body>
 </html>
