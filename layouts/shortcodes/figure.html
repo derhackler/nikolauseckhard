@@ -1,0 +1,8 @@
+{{/* shortcode taken from https://laurakalbag.com/processing-responsive-images-with-hugo/ */}}
+
+<figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
+  {{.Inner}}
+    <figcaption>
+      <p>{{ .Get "figcaption" }}</p>
+  </figcaption>
+</figure>

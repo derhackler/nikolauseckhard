@@ -41,3 +41,4 @@ are available at https://nikolaus-eckhard.onrender.com
 # Attributions
 
 https://discourse.gohugo.io/t/resizing-front-matter-images/18246/14 - for resizing images
+* Laura Kalbag for [responsive image shortcodes](https://laurakalbag.com/processing-responsive-images-with-hugo/)
