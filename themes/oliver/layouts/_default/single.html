@@ -1,10 +1,8 @@
 {{ define "main" }}
-
-<article>
-  {{ partial "heading.html" . }}
+<div class="u-padding">
+<div class="spacer"></div>
+<div class="about">
   {{ .Content }}
-  {{ partial "tags.html" . }}
-  {{ partial "comments.html" . }}
-</article>
-
+</div>
+</div>
 {{ end }}
