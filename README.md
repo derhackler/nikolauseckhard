@@ -4,7 +4,7 @@ This is the source of the homepage of the artist Nikolaus Eckhard
 
 ## Create a new project (based on the template)
 
-1. `hugo new --kind project projects/name-of-the-project`
+1. `hugo new projects/name-of-the-project`
 2. Replace the title, tags, coverimage, and text
 
 ## Creating Content
