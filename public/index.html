@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.59.1" />
+  
+  
+  
+  <title>
+    
+    Nikolaus Eckhard
+    
+  </title>
+  <link rel="canonical" href="https://nikolaus-eckhard.onrender.com/">
+  
+  
+  
+  
+
+
+
+  
+  
+
+  
+  <link rel="stylesheet" href="https://nikolaus-eckhard.onrender.com/css/base.min.03db2be5cd13a1ca629aca9edc6b903376e1b210e652deb405498b8d50be81c3.css" integrity="sha256-A9sr5c0Tocpimsqe3GuQM3bhshDmUt60BUmLjVC&#43;gcM=" crossorigin="anonymous">
+  
+  
+  
+</head>
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        <a class="Banner-link u-clickable" href="https://nikolaus-eckhard.onrender.com/">NIKOLAUS ECKHARD</a>
+      </li>
+      
+      <li class="Banner-item">
+        <a class="Banner-link u-clickable" href="https://nikolaus-eckhard.onrender.com/index/">index</a>
+      </li>
+      
+      <li class="Banner-item">
+        <a class="Banner-link u-clickable" href="https://nikolaus-eckhard.onrender.com/about/">about</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  
+  <main>
+
+        
+
+
+
+<div class="articles">
+<div class="spacer"></div>
+
+
+</div>
+
+<script>
+let currentElem = null;
+let articles = document.querySelector(".articles");
+
+
+
+articles.addEventListener("mouseover", function(event){
+  if (currentElem) return;
+  let target = event.target.closest('article');
+  if (!target) return;
+  if (!articles.contains(target)) return;
+  currentElem = target;
+  onEnter(currentElem);
+});
+articles.addEventListener("mouseout", function(event){
+  if (!currentElem) return;
+  let relatedTarget = event.relatedTarget;
+  while (relatedTarget) {
+    if (relatedTarget == currentElem) return;
+    relatedTarget = relatedTarget.parentNode;
+  }
+  onLeave(currentElem);
+  currentElem = null;
+});
+
+function onEnter(elem){
+  let bgcontent = document.querySelector(`#background-for-${elem.id}`);
+  if(!bgcontent) return;
+  bgcontent.style.display="flex";
+}
+
+function onLeave(elem){
+  let bgcontent = document.querySelector(`#background-for-${elem.id}`);
+  if(!bgcontent) return;
+  bgcontent.style.display="none";
+}
+
+
+function changeColor(x){
+  var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+  x.style.backgroundColor = rndCol;
+}
+
+function random(number) {
+  return Math.floor(Math.random()*(number+1));
+}
+</script>
+
+
+  </main>
+  
+<div class="page-centered-element">
+    <div class="content">
+      
+    </div>
+  </div>
+
+  
+
+</body>
+</html>

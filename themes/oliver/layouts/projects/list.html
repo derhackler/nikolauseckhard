@@ -1,6 +1,5 @@
 {{ define "main" }}
 
-
 {{ .Content }}
 
 <div class="spacer"></div>
@@ -19,9 +18,10 @@
               {{ with resources.Get $imgpath }}
                   {{ $thumb := (.Fill "600x400").RelPermalink }}
                   <div>
+                  <a href="{{ $link }}">
                     <img src="{{ $thumb }}">
                     <div>{{$index}}</div>
-                    <a href="{{ $link }}">{{ $title }}</a>
+                    {{ $title }}</a>
                   </div>
                   {{ end }}
           {{ end }}

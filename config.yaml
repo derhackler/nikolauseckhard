@@ -5,3 +5,12 @@ theme: oliver
 assetDir: content
 taxonomies:
   tag: tags
+
+menu:
+  nav:
+  - name: index
+    url: projects/
+    weight: 1
+  - name: about
+    url: about/
+    weight: 2

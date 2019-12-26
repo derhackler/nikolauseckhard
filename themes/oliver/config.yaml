@@ -18,11 +18,4 @@ params:
   mainSecions:
     - project
 
-menu:
-  nav:
-  - name: index
-    url: index/
-    weight: 1
-  - name: about
-    url: about/
-    weight: 2
+

@@ -58,6 +58,11 @@ figure {
   line-height: 1em;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .Banner {
   list-style: none;
   display: flex;
@@ -254,5 +259,47 @@ ul.tags li{
   font-size: 1rem;
   white-space: initial;
   padding: 0.2rem;
+}
+
+
+
+/* for the index view */
+* {
+  box-sizing: border-box;
+}
+
+.outer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.wrapper>div:not(.line) {
+  padding: 1rem;
+}
+
+/* .wrapper > div:first-of-type,
+.line + div {
+  grid-column: 2;
+} */
+
+.line {
+  grid-column: 1 / -1;
+  height: 2px;
+  background: black;
+}
+
+.wrapper img:hover {
+	-webkit-filter: grayscale(0) !important;
+	filter: grayscale(0) !important;
+}
+
+.wrapper img {
+	-webkit-filter: grayscale(100%) !important;
+	filter: grayscale(100%) !important;
 }
 

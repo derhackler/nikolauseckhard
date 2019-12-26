@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://nikolaus-eckhard.onrender.com/xml/base.min.xml" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Nikolaus Eckhard</title>
+    <link>https://nikolaus-eckhard.onrender.com/tags/</link>
+    <description>Recent content in Tags on Nikolaus Eckhard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://nikolaus-eckhard.onrender.com/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
