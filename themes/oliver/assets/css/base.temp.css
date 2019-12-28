@@ -209,9 +209,8 @@ article a {
   display: inline-block;
 }
 
-
 .page-centered-element {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -222,6 +221,7 @@ article a {
 }
 .content {
   text-align: center;
+  overflow: hidden;
 }
 
 .spacer {
