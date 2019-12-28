@@ -7,7 +7,6 @@
 
 <div class="outer">
   <div class="wrapper">
-     <div class="line"></div>
 {{ range $index, $element := where site.RegularPages "Type" "in" site.Params.mainSections }}
       {{ $imgpath := path.Join .Dir .Params.image }}
       {{ $contentid := .UniqueID }}
@@ -26,8 +25,15 @@
                   {{ end }}
           {{ end }}
       {{ end }}
-      {{if (eq $index 6)}}
-         <div class="line"></div>
+      {{if (modBool $index 2)}}
+         <div class="line2 line">
+         </div>
+      {{ end }}
+      {{if (modBool $index 4)}}
+         <div class="line4 line"></div>
+      {{ end }}
+      {{if (modBool $index 6)}}
+         <div class="line6 line"></div>
       {{ end }}
 {{ end }}
     <div class="line"></div>
