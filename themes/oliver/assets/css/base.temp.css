@@ -209,8 +209,15 @@ article a {
   display: inline-block;
 }
 
+
 .about {
-  columns: 2;
+  columns: 1;
+}
+@media (min-width: 992px)
+{
+  .about {
+    columns: 2;
+  }
 }
 
 .about ul {
