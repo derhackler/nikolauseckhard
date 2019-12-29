@@ -190,6 +190,7 @@ a {
     bottom: 0;
     min-width: 50%;
     min-height: 50%;
+    max-width: 100%;
     transform: translateX(calc((100% - 100vw) / 2));
 }
 
