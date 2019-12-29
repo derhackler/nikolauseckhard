@@ -193,6 +193,10 @@ a {
     transform: translateX(calc((100% - 100vw) / 2));
 }
 
+.show-as-background {
+  display: flex !important;
+}
+
 .background-content {
   display: none;
 }
