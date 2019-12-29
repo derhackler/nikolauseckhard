@@ -79,13 +79,13 @@ articles.addEventListener("mouseout", function(event){
 function onEnter(elem){
   let bgcontent = document.querySelector(`#background-for-${elem.id}`);
   if(!bgcontent) return;
-  bgcontent.style.display="flex";
+  bgcontent.classList.add("show-as-background");
 }
 
 function onLeave(elem){
   let bgcontent = document.querySelector(`#background-for-${elem.id}`);
   if(!bgcontent) return;
-  bgcontent.style.display="none";
+  bgcontent.classList.remove("show-as-background");
 }
 
 
