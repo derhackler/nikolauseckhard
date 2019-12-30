@@ -20,7 +20,7 @@ This is the source of the homepage of the artist Nikolaus Eckhard
 
 * Git
 * Hugo
-***++++~
+
 
 ## How to run locally
 
