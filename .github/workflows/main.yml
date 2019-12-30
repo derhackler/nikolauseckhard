@@ -12,4 +12,4 @@ jobs:
     - name: Hugo setup
       uses: peaceiris/actions-hugo@v2.3.2
     - name: compile hugo page
-      run: hugo
+      run: hugo -D
