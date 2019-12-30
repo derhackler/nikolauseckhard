@@ -6,3 +6,12 @@ image: img.jpg
 ---
 
 elisej
+
+text schaukel und kirche und spass aber macht und gott und so
+
+
+{{<space>}}
+
+{{<figure src="img .jpg" title="a table" alt="a table">}}
+
+{{<figure src="img.jpg" title="another image">}}
