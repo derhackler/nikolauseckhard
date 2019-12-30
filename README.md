@@ -40,7 +40,7 @@ are available at https://nikolaus-eckhard.onrender.com
 
 # Attributions
 
-https://discourse.gohugo.io/t/resizing-front-matter-images/18246/14 - for resizing images
+* https://discourse.gohugo.io/t/resizing-front-matter-images/18246/14 - for resizing images
 * Laura Kalbag for [responsive image shortcodes](https://laurakalbag.com/processing-responsive-images-with-hugo/)
 * kaushalmodi for his [answer on rendering a/b as fraction](https://discourse.gohugo.io/t/solved-how-to-prevent-a-text-character-from-being-transformed/13850).
 * robinsblog for the [grayscale css effect](https://robinroelofsen.com/change-images-grayscale-color-hover)
