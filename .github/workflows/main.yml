@@ -13,3 +13,20 @@ jobs:
       uses: peaceiris/actions-hugo@v2.3.2
     - name: compile hugo page
       run: hugo -D
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      with:
+        # FTP server name (you may need to specify a port)
+        ftp_server: ssh.nikolauseckhard.at
+        # FTP account username
+        ftp_username: nikolauseckhard.at
+        # FTP account password
+        ftp_password: ${{ secrets.SFTP_PASSWORD }}
+        # Protocol used to deploy (ftp or sftp)
+        method: sftp
+        # The port used to connect to server
+        port: 22
+        # The local folder to copy, defaults to root project folder
+        local_dir: public
+        # The remote folder to copy to, deafults to root FTP folder (I recommend you configure this on your server side instead of here)
+        remote_dir: draft
