@@ -10,7 +10,7 @@ This is the source of the homepage of the artist Nikolaus Eckhard
 ## Creating Content
 
 1. checkout the repository
-2. create a new folder with the project name in `projects`
+2. create a new folder with the project name in `content/projects`
 3. create an `index.md` file in this folder (copy it from another)
 4. write the text in [markdown](https://www.markdownguide.org/basic-syntax)
 
