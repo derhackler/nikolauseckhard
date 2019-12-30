@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Hugo setup
+      uses: peaceiris/actions-hugo@v2.3.2
+    - name: compile hugo page
+      run: hugo
