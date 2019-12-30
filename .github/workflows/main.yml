@@ -15,7 +15,7 @@ jobs:
       run: hugo -D
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
-      with:
+      env:
         # FTP server name (you may need to specify a port)
         ftp_server: ssh.nikolauseckhard.at
         # FTP account username
