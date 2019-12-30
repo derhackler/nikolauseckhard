@@ -9,8 +9,6 @@ This is the source of the homepage of the artist Nikolaus Eckhard
 
 ## Creating Content
 
-TBD
-
 1. checkout the repository
 2. create a new folder with the project name in `projects`
 3. create an `index.md` file in this folder (copy it from another)
