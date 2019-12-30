@@ -37,7 +37,6 @@ are available at https://nikolaus-eckhard.onrender.com
 1. Get in contact with Nikolaus Eckhard to align the planned changes
 2. Create a pull request with your changes
 
-
 # Attributions
 
 * https://discourse.gohugo.io/t/resizing-front-matter-images/18246/14 - for resizing images
