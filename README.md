@@ -13,6 +13,7 @@ This is the source of the homepage of the artist Nikolaus Eckhard
 2. create a new folder with the project name in `projects`
 3. create an `index.md` file in this folder (copy it from another)
 4. write the text in markdown
+ääääääääääää
 
 # Developing
 
