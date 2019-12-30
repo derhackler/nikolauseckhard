@@ -2,7 +2,7 @@
 title: "Steam Boat Bill"
 date: 2019-11-03T21:32:32+01:00
 draft: true
-image: "coverimage.jpg"
+image: "steamboatbill.jpg"
 tags: ["Beton","Performance","Interaktiv"]
 ---
 
@@ -16,6 +16,6 @@ Eigengewicht gegen uns. Langsam verschwimmen die Körpergrenzen - Körper; Eigen
 
 {{<space>}}
 
-{{<figure src="coverimage.jpg" title="a table" alt="a table">}}
+{{<figure src="steamboatbill.jpg" title="a table" alt="a table">}}
 
-{{<figure src="coverimage.jpg" title="another image">}}
+{{<figure src="steamboatbill.jpg" title="another image">}}
