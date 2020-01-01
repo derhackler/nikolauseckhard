@@ -12,19 +12,8 @@
       {{ $contentid := .UniqueID }}
       {{ $title := .Title }}
       {{ $link := .Permalink}}
-      {{ with .Params.image }}
-          {{ if fileExists $imgpath }}
-              {{ with resources.Get $imgpath }}
-                  {{ $thumb := (.Fill "600x400").RelPermalink }}
-                  <div>
-                  <a href="{{ $link }}">
-                    <img src="{{ $thumb }}">
-                    <div>{{$index}}</div>
-                    {{ $title }}</a>
-                  </div>
-                  {{ end }}
-          {{ end }}
-      {{ end }}
+      {{ $onebasedindex := add $index 1}}
+
       {{if (modBool $index 2)}}
          <div class="line2 line">
          </div>
@@ -38,8 +27,23 @@
       {{if (modBool $index 8)}}
          <div class="line8 line"></div>
       {{ end }}
+
+      {{ with .Params.image }}
+          {{ if fileExists $imgpath }}
+              {{ with resources.Get $imgpath }}
+                  {{ $thumb := (.Fill "600x400").RelPermalink }}
+                  <div>
+                  <a href="{{ $link }}">
+                    <img src="{{ $thumb }}">
+                    <div>{{$onebasedindex}}</div>
+                    {{ $title }}</a>
+                  </div>
+                  {{ end }}
+          {{ end }}
+      {{ end }}
+
 {{ end }}
-    <div class="line"></div>
+    <div class="line line-always"></div>
   </div>
 </div>
 
