@@ -323,27 +323,19 @@ ul.tags li{
   background-color: black;
 }
 
-.line2 {
+.line {
   grid-column: 1 / -1;
   height: 2px;
   background-color: black;
 }
+
 .line4 {
-  grid-column: 1 / -1;
-  height: 2px;
-  background: black;
   display: none;
 }
 .line6 {
-  grid-column: 1 / -1;
-  height: 2px;
-  background: black;
   display: none;
 }
 .line8 {
-  grid-column: 1 / -1;
-  height: 2px;
-  background: black;
   display: none;
 }
 @media (min-width: 768px)
