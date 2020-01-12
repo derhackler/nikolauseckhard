@@ -2,7 +2,7 @@
 title: "RaumZeitHund"
 date: 2020-01-12T16:51:01+01:00
 draft: true
-image: "RZH_hp.jpg"
+image: RZH_hp.jpg
 tags: ["Beton","Performance","Interaktiv"]
 ---
 

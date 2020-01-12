@@ -1,6 +1,6 @@
 ---
 title: "four three two one"
-date: {{ .Date }}
+date: 2020-01-12T20:51:02+01:00
 draft: true
 image: "4321_hp(4).jpg"
 tags: ["Beton","Performance","Interaktiv"]
