@@ -2,7 +2,7 @@
 title: "Saturn frisst seine Kinder."
 date: {{ .Date }}
 draft: true
-image: "coverimage.jpg"
+image: coverimage.jpg
 tags: ["Beton","Performance"]
 ---
 
