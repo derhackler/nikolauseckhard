@@ -14,24 +14,4 @@ Eigengewicht gegen uns. Langsam verschwimmen die Körpergrenzen - Körper; Eigen
 
 {{<space>}}
 
-{{<figure figcaption="a single caption under all three" >}}
-
-  {{<img src="tisch1.jpg" alt="tisch 1" >}}
-
-  {{<img src="tisch2.jpg" alt="tisch 2" >}}
-
-  {{<img src="tisch3.jpg" alt="tisch 3" >}}
-
-{{</figure >}}
-
-{{<figure figcaption="picy by ....xx. " >}}
-
-  {{<img src="tisch1.jpg" alt="tisch 1" >}}
-
-  {{<img src="tisch2.jpg" alt="tisch 2" >}}
-
-  {{<img src="tisch3.jpg" alt="tisch 3" >}}
-
-{{</figure >}}
-
 
