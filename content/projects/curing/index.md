@@ -11,7 +11,7 @@ In order to build a concrete structure, a negative mould is required in which th
 {{<space>}}
 
 {{<figure figcaption="caption text" >}}
-  {{<img src="curing(w).jpg" alt="curing (w)" >}}
-  {{<img src="curing(x).jpg" alt="curing (x)" >}
-  {{<img src="curing(c).jpg" alt="curing (c)" >}}}
+  {{<img src= curing(w).jpg alt="curing (w)" >}}
+  {{<img src= curing(x).jpg alt="curing (x)" >}
+  {{<img src= curing(c).jpg alt="curing (c)" >}}}
 {{</figure >}}
