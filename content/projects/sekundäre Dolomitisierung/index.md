@@ -16,5 +16,5 @@ Eigengewicht gegen uns. Langsam verschwimmen die Körpergrenzen - Körper; Eigen
 {{<space>}}
 
 {{<figure figcaption="caption text" >}}
-  {{<img src="coverimage.jpg" alt="alt text" >}}
+  {{<img src=sekDo_hp(2).jpg alt="alt text" >}}
 {{</figure >}}
