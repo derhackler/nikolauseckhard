@@ -2,7 +2,7 @@
 title: "Saturn frisst seine Kinder."
 date: 2019-11-01T20:52:00+01:00
 draft: true
-image: saturn_hp(1)
+image: saturn_hp(1).jpg
 tags: ["Beton","Performance"]
 ---
 
