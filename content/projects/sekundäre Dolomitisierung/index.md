@@ -2,7 +2,7 @@
 title: "sekundäre Dolomitisierung"
 date: 2020-01-12T16:51:01+01:00
 draft: true
-image: sekDo_hp(2).jpg
+image: sekdo_hp(2).jpg
 tags: ["Beton","Performance","Interaktiv"]
 ---
 
