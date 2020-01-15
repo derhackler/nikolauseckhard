@@ -2,7 +2,7 @@
 title: "sekundäre Dolomitisierung"
 date: 2020-01-12T16:51:01+01:00
 draft: true
-image: dolo(10).jpg
+image: dolo_hp(10).jpg
 tags: ["concrete","Performance","sculpture"]
 ---
 
