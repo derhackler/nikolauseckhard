@@ -17,8 +17,8 @@ Your hands are closely placed next to the ones of your co-participants. The rema
 
 {{<figure figcaption="exhibition view: Vienna – DREISECHSFUENF # 3" >}}
   {{<img src="4321_hp(1).jpg" alt="alt text" >}}
-    {{<img src="4321_hp(2).jpg" alt="alt text" >}}
-      {{<img src="4321_hp(3).jpg" alt="alt text" >}}
+  {{<img src="4321_hp(2).jpg" alt="alt text" >}}
+  {{<img src="4321_hp(3).jpg" alt="alt text" >}}
   {{<img src="4321_hp(4).jpg" alt="alt text" >}}
 
   
