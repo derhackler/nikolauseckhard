@@ -2,7 +2,7 @@
 title: "junge Römer"
 date: 2020-01-12T16:51:01+01:00
 draft: true
-image: roemer(4).jpg
+image: roemer (4).jpg
 tags: ["Beton",]
 ---
 
@@ -11,8 +11,8 @@ In order to build a concrete structure, a negative mould is required in which th
 {{<space>}}
 
 {{<figure figcaption="caption text" >}}
-  {{<img src=roemer(4).jpg alt="alt text" >}}
-  {{<img src=roemer(3).jpg alt="alt text" >}}
-  {{<img src=roemer(2).jpg alt="alt text" >}}
-  {{<img src=roemer(1).jpg alt="alt text" >}}
+  {{<img src="roemer (4).jpg" alt="alt text" >}}
+  {{<img src="roemer (3).jpg" alt="alt text" >}}
+  {{<img src="roemer (2).jpg" alt="alt text" >}}
+  {{<img src="roemer (1).jpg" alt="alt text" >}}
 {{</figure >}}
