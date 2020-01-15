@@ -13,6 +13,6 @@ Saturn devours his children. He does so until Ops, his wife, hands him a stone i
 
 {{<space>}}
 
-{{<figure figcaption="caption text" >}}
+{{<figure figcaption="foto Oliver Modosch" >}}
   {{<img src="saturn_hp(1)" alt="alt text" >}}
 {{</figure >}}
