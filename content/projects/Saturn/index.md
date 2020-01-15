@@ -14,5 +14,5 @@ Saturn devours his children. He does so until Ops, his wife, hands him a stone i
 {{<space>}}
 
 {{<figure figcaption="caption text" >}}
-  {{<img src="coverimage.jpg" alt="alt text" >}}
+  {{<img src="saturn_hp(1)" alt="alt text" >}}
 {{</figure >}}
