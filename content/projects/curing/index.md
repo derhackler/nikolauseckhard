@@ -2,7 +2,7 @@
 title: "curing"
 date: 2020-01-12T19:51:03+01:00
 draft: true
-image: curing(I).jpg 
+image: curing(w).jpg 
 tags: ["Beton","Performance","Interaktiv"]
 ---
 
