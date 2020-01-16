@@ -2,7 +2,7 @@
 title: "Saturn frisst seine Kinder."
 date: 2019-11-01T20:52:00+01:00
 draft: true
-image: saturn_hp(1).jpg
+image: saturn_hp(2).jpg
 tags: ["Beton","Performance"]
 ---
 
@@ -13,6 +13,16 @@ Saturn devours his children. He does so until Ops, his wife, hands him a stone i
 
 {{<space>}}
 
-{{<figure figcaption="foto Oliver Modosch" >}}
+{{<figure figcaption="pic 1-10 Valentin Farkasch | pic 11 Oliver Modosch" >}}
   {{<img src="saturn_hp(1)" alt="alt text" >}}
+  {{<img src="saturn_hp(2)" alt="alt text" >}}
+  {{<img src="saturn_hp(3)" alt="alt text" >}}
+  {{<img src="saturn_hp(4)" alt="alt text" >}}
+  {{<img src="saturn_hp(5)" alt="alt text" >}}
+  {{<img src="saturn_hp(6)" alt="alt text" >}}
+  {{<img src="saturn_hp(7)" alt="alt text" >}}
+  {{<img src="saturn_hp(8)" alt="alt text" >}}
+  {{<img src="saturn_hp(9)" alt="alt text" >}}
+  {{<img src="saturn_hp(10)" alt="alt text" >}}
+  {{<img src="saturn_hp(11)" alt="alt text" >}}
 {{</figure >}}
