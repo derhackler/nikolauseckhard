@@ -1,6 +1,6 @@
 ---
 title: "curing"
-date: 2020-01-12T19:51:03+01:00
+date: 2020-01-16T19:51:03+01:00
 draft: true
 image: curing(w).jpg 
 tags: ["Sculpture, Concrete"]

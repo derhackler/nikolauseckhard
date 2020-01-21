@@ -1,6 +1,6 @@
 ---
 title: "Saturn frisst seine Kinder."
-date: 2019-11-01T20:52:00+01:00
+date: 2020-01-18T20:52:00+01:00
 draft: true
 image: saturn_hp(2).jpg
 tags: ["2017, concrete sculpture 60x60x300, book 19x13x1, performance"]

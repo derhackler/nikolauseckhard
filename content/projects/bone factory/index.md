@@ -1,6 +1,6 @@
 ---
 title: "bone facatory"
-date: 2019-12-30T20:51:21+01:00
+date: 2020-01-20T20:51:21+01:00
 draft: true
 tags: ["Skulptur", "Performance", "Beton"]
 image: bonefactory_hp(y).jpg
