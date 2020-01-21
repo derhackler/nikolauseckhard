@@ -1,6 +1,6 @@
 ---
 title: "The End of Walnut Grove"
-date: 2020-1-15T19:51:03+01:00
+date: 2020-01-15T19:51:03+01:00
 draft: true
 image: walnut(1).jpg
 tags: ["2013; short fiction, 30min"]

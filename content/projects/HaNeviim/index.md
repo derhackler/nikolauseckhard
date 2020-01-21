@@ -1,6 +1,6 @@
 ---
 title: "HaNeviim"
-date: 2020-1-15T20:52:14+01:00
+date: 2020-01-15T20:52:14+01:00
 draft: true
 image: HaNeviim_hp(1).jpg
 tags: ["2015, two-channel videoinstallation, digital prints",]
