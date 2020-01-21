@@ -3,12 +3,8 @@ title: "RaumZeitHund"
 date: 2020-01-12T16:51:01+01:00
 draft: true
 image: RZH_hp.jpg
-tags: ["Beton","Performance","Interaktiv"]
+tags: ["2010, 6min, 35mm, silent"]
 ---
-
-RaumZeitHund
-2010, 6 min, 35 mm, Silent
-
 
 Nikolaus Eckhard´s ironic study RaumZeitHund (SpaceTimeDog) is situated in the field of tension between chronophotography and cinematography. 
 As legend goes, Eadweard Muybridge discovered chronophotography ca. 1870 as the result of a wager. He wanted to prove that a horse had all four legs in the air for a brief moment when in a gallop. In RaumZeitHund Nikolaus Eckhard refers directly to Muybridge´s famous photo series “Animal Locomotions.” A dog, specially trained for this purpose, is filmed on a treadmill in extreme slow motion (150 individual images per second). But in contrast to his role model, Eckhard does not use a slender, athletic greyhound, but rather, a less representative, long-eared brown Alpine Dachsbracke. The hunting dog, which is tethered to a black leather leash, is additionally furnished with black and white circular marks like a crash test dummy. The impression of “scientific-ness” is further heightened in that the color film is consistently screened entirely without sound.
@@ -17,9 +13,7 @@ The dog´s movements, which are initially smooth, become increasingly distorted;
 Crew
 Mark Gerstorfer, Anna Manhardt, Beate Bergolth, Severin Fiala, Johann Lurf, Thomas Rögelsperger, Valentin Fiala, Benedikt Eckhard, Max Limbeck 
 
-
 {{<space>}}
 
-{{<figure figcaption="caption text" >}}
   {{<img src=RZH_hp.jpg alt="alt text" >}}
 {{</figure >}}

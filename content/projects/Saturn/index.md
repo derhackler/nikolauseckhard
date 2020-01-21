@@ -3,7 +3,7 @@ title: "Saturn frisst seine Kinder."
 date: 2019-11-01T20:52:00+01:00
 draft: true
 image: saturn_hp(2).jpg
-tags: ["Beton","Performance"]
+tags: ["2017, concrete sculpture 60x60x300, book 19x13x1, performance"]
 ---
 
 Fresh concrete doesn’t simply adapt to the shape of a given formwork. What actually happens is a transfer of information between the liquid stone and the mould – a mutual entanglement and a process of simultaneously becoming matter and mould. For Saturn frisst seine Kinder. (Saturn devours his children.) Nikolaus Eckhard used his own body as a mould to build an architectural structure – a column. His assistants poured the liquid stone into the space between torso, arms and legs. Then he held still to observe the curing of the material— the entanglement of stone and flesh, the sensations of irritated nerves, the difficulties of breathing, and the warm summer nights. A cast was poured every second day until the set of 10 were complete. Each cast added 30 cm to the body of the sculpture, resulting in a column 3 meters high. 

@@ -10,7 +10,7 @@ Your hands are closely placed next to the ones of your co-participants. The rema
 
 {{<space>}}
 
-{{<figure figcaption="exhibition view: Vienna – DREISECHSFUENF # 3" >}}
+{{<figure figcaption="exhibition view: DREISECHSFUENF # 3, Vienna 2018" >}}
   {{<img src="4321_hp(1).jpg" alt="alt text" >}}
   {{<img src="4321_hp(2).jpg" alt="alt text" >}}
   {{<img src="4321_hp(3).jpg" alt="alt text" >}}

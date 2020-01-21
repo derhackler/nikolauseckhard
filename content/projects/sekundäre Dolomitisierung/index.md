@@ -8,6 +8,7 @@ tags: ["concrete","Performance","sculpture"]
 
 Performing/sculpting entanglement with dolomite stone and concrete on mount Ritten in South Tirol, Italy.
 Nikolaus Eckhard carried a quarried stone from the valley to the mountain and reconnected it by filling the space between rock, stone and his body with concrete.
+With the help of: Ronald Zechner
 
 {{<space>}}
 
