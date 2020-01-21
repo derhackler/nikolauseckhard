@@ -20,6 +20,7 @@ Your hands are closely placed next to the ones of your co-participants. The rema
   {{<img src="4321_hp(2).jpg" alt="alt text" >}}
   {{<img src="4321_hp(3).jpg" alt="alt text" >}}
   {{<img src="4321_hp(4).jpg" alt="alt text" >}}
+  {{<img src="4321_hp(5).jpg" alt="alt text" >}}
 
   
 {{</figure >}}
