@@ -1,9 +1,9 @@
 ---
 title: "brea.th.through"
-date: 2020-01-21T18:51:04+01:00
+date: 2020-1-21T18:51:04+01:00
 draft: true
 image: breath_hp(1).jpg
-tags: ["Beton","Performance","Interaktiv"]
+tags: ["concrete", sculpture","Performance"]
 ---
 
 brea.th.through
