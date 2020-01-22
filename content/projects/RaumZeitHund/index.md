@@ -15,5 +15,6 @@ Mark Gerstorfer, Anna Manhardt, Beate Bergolth, Severin Fiala, Johann Lurf, Thom
 
 {{<space>}}
 
+{{<figure figcaption="" >}}
   {{<img src=RZH_hp.jpg alt="alt text" >}}
 {{</figure >}}
