@@ -9,6 +9,7 @@ In order to build a concrete structure, a negative mould is required in which th
 
 {{<space>}}
 
+{{<figure figcaption="">}}
   {{<img src="roemer (1).jpg" alt="alt text" >}}
   {{<img src="roemer (2).jpg" alt="alt text" >}}
   {{<img src="roemer (3).jpg" alt="alt text" >}}
