@@ -39,7 +39,7 @@
 {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
 
 <article id="{{ .UniqueID }}">
-  <a class="Heading-link u-clickable" href="{{ .Permalink }}" rel="bookmark">
+  <a class="homepageprojectlink" href="{{ .Permalink }}" rel="bookmark">
     <header>
       <h2>
         {{ .Title }}
