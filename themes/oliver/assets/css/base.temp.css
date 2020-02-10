@@ -200,7 +200,7 @@ a {
 }
 
 .show-as-background {
-  display: flex !important;
+  display: block !important;
 }
 
 .background-content {
