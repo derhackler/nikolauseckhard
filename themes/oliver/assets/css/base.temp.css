@@ -110,6 +110,11 @@ a {
   color: inherit;
 }
 
+.homepageprojectlink {
+  color: inherit;
+  display: block;
+}
+
 .Tags {
   list-style: none;
   display: flex;
@@ -188,14 +193,14 @@ a {
     z-index: 1;
     right: 0;
     bottom: 0;
-    min-width: 50%;
-    min-height: 50%;
+    /* min-width: 50%;
+    min-height: 50%; */
     max-width: 100%;
-    transform: translateX(calc((100% - 100vw) / 2));
+    /* transform: translateX(calc((100% - 100vw) / 2)); */
 }
 
 .show-as-background {
-  display: flex !important;
+  display: block !important;
 }
 
 .background-content {
@@ -317,18 +322,11 @@ ul.tags li{
 .wrapper>div:not(.line) {
   padding: 1rem;
 }
-.line-always {
-  grid-column: 1 / -1;
-  height: 2px;
-  background-color: black;
-}
-
 .line {
   grid-column: 1 / -1;
   height: 2px;
   background-color: black;
 }
-
 .line4 {
   display: none;
 }
