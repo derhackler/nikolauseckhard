@@ -165,9 +165,6 @@ Bachelor Degree
 
 
 
-
-
-
 ## 2016
 exhibitions 	
 Tallinn (EST) – EKA Galeriis, siin me oleme! 
