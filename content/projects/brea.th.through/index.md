@@ -15,9 +15,6 @@ In seiner Performance/Skulptur brea.th.through geht Nikolaus Eckhard  in Inter-a
 
 {{<space>}}
 
-{{<figure figcaption="caption text" >}}
-  {{<img src="coverimage.jpg" alt="alt text" >}}
-{{</figure >}}
 
 {{<figure figcaption="Essl Museum -Globart Academy, Vienna 2019" >}}
   {{<img src="breath_hp(1).jpg" alt="alt text" >}}
