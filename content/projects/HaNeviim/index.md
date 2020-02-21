@@ -16,14 +16,14 @@ PASSWORD: RUN
 
 
 {{<figure figcaption="caption text" >}}
-  {{<img src=HaNeviim_hp(1) alt="alt text" >}}
-  {{<img src=HaNeviim_hp(2) alt="alt text" >}}
-  {{<img src=HaNeviim_hp(3) alt="alt text" >}}
-  {{<img src=HaNeviim_hp(4) alt="alt text" >}}
-  {{<img src=HaNeviim_hp(5) alt="alt text" >}}
-  {{<img src=HaNeviim_hp(6) alt="alt text" >}}
-  {{<img src=HaNeviim_hp(7) alt="alt text" >}}
-  {{<img src=HaNeviim_hp(8) alt="alt text" >}}
-  {{<img src=HaNeviim_hp(9) alt="alt text" >}}
-  {{<img src=HaNeviim_hp(x) alt="alt text" >}}
+  {{<img src="HaNeviim_hp(1)" alt="alt text" >}}
+  {{<img src="HaNeviim_hp(2)" alt="alt text" >}}
+  {{<img src="HaNeviim_hp(3)" alt="alt text" >}}
+  {{<img src="HaNeviim_hp(4)" alt="alt text" >}}
+  {{<img src="HaNeviim_hp(5)" alt="alt text" >}}
+  {{<img src="HaNeviim_hp(6)" alt="alt text" >}}
+  {{<img src="HaNeviim_hp(7)" alt="alt text" >}}
+  {{<img src="HaNeviim_hp(8)" alt="alt text" >}}
+  {{<img src="HaNeviim_hp(9)" alt="alt text" >}}
+  {{<img src="HaNeviim_hp(x)" alt="alt text" >}}
 {{</figure >}}

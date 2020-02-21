@@ -5,6 +5,7 @@ theme: oliver
 assetDir: content
 taxonomies:
   tag: tags
+timeout: 50000
 
 menu:
   nav:
