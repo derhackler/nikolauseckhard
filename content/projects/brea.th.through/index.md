@@ -31,3 +31,4 @@ In seiner Performance/Skulptur brea.th.through geht Nikolaus Eckhard  in Inter-a
   {{<img src="breath_hp(14).jpg" alt="alt text" >}}
   {{<img src="breath_hp(18).jpg" alt="alt text" >}}
   {{<img src="breath_hp(15).jpg" alt="alt text" >}}
+{{</figure>}}
