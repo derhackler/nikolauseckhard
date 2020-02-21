@@ -7,8 +7,8 @@ function doSomething(scroll_pos) {
   // Do something with the scroll position
   let projects = [];
   {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
-      {{ $imgpath := path.Join .Dir .Params.image }}
-      {{ $contentid := .UniqueID }}
+      {{ $imgpath := path.Join .File.Dir .Params.image }}
+      {{ $contentid := .File.UniqueID }}
       projects.push('{{$contentid}}');
   {{ end }}
 

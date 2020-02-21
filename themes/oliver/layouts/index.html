@@ -38,7 +38,7 @@
 
 {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
 
-<article id="{{ .UniqueID }}">
+<article id="{{ .File.UniqueID }}">
   <a class="homepageprojectlink" href="{{ .Permalink }}" rel="bookmark">
     <header>
       <h2>
@@ -106,8 +106,8 @@ function random(number) {
 <div class="page-centered-element">
     <div class="content">
       {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
-      {{ $imgpath := path.Join .Dir .Params.image }}
-      {{ $contentid := .UniqueID }}
+      {{ $imgpath := path.Join .File.Dir .Params.image }}
+      {{ $contentid := .File.UniqueID }}
       {{ with .Params.image }}
           {{ if fileExists $imgpath }}
               {{ with resources.Get $imgpath }}

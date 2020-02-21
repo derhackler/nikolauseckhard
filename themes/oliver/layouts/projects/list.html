@@ -8,8 +8,8 @@
 <div class="outer">
   <div class="wrapper">
 {{ range $index, $element := where site.RegularPages "Type" "in" site.Params.mainSections }}
-      {{ $imgpath := path.Join .Dir .Params.image }}
-      {{ $contentid := .UniqueID }}
+      {{ $imgpath := path.Join .File.Dir .Params.image }}
+      {{ $contentid := .File.UniqueID }}
       {{ $title := .Title }}
       {{ $link := .Permalink}}
       {{ $onebasedindex := add $index 1}}
