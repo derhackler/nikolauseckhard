@@ -2,7 +2,7 @@
 title: "brea.th.through"
 date: 2020-01-21T18:51:04+01:00
 draft: true
-image: breath_hp(1).jpg
+image: breath_hp(12).jpg
 tags: ["concrete", sculpture","Performance"]
 ---
 
@@ -15,6 +15,19 @@ In seiner Performance/Skulptur brea.th.through geht Nikolaus Eckhard  in Inter-a
 
 {{<space>}}
 
-{{<figure figcaption="caption text" >}}
-  {{<img src="coverimage.jpg" alt="alt text" >}}
-{{</figure >}}
+
+{{<figure figcaption="Essl Museum -Globart Academy, Vienna 2019" >}}
+  {{<img src="breath_hp(1).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(3).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(4).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(5).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(6).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(7).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(8).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(9).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(10).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(11).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(13).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(14).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(18).jpg" alt="alt text" >}}
+  {{<img src="breath_hp(15).jpg" alt="alt text" >}}
