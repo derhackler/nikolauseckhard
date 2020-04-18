@@ -236,12 +236,25 @@ article a {
 }
 
 .spacer {
-  height: 15rem;
+    height: 13rem;
+}
+/* .content-media-spacer { */
+/*     height: 13rem; */
+/*     background-color: orange; */
+/* } */
+@media only screen and (max-height: 736px) {
+    .content-media-spacer {
+        height: 30rem;
+    }
+}
+@media only screen and (max-height: 667px) {
+    .content-media-spacer {
+        height: 20rem;
+    }
 }
 
-.content-media-spacer {
-  height: 12rem;
-}
+
+
 
 ul.tags {
   font-size: 0;
