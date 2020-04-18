@@ -16,7 +16,7 @@ main {
 
 img {
   max-width: 100%;
-  border-radius: 0.2rem;
+  /* border-radius: 0.2rem; */
 }
 
 pre {
@@ -187,6 +187,7 @@ a {
   align-items: center;
   background-color: blue;
 }
+
 
 .background-image {
     position: fixed;
