@@ -22,7 +22,7 @@ window.onscroll = function() {
     var galleryImages = document.querySelectorAll("figure img");
     var viewportImages =[];
     for (var i = 0; i < galleryImages.length; i++) {
-        galleryImages[i].style.borderWidth = "0px";
+//         galleryImages[i].style.borderWidth = "0px";
         galleryImages[i].classList.remove("scrollsnap");
         if(galleryImages[i].offsetTop > (window.pageYOffset) > 0 && isElementInViewport(galleryImages[i]))
             viewportImages.push(galleryImages[i]);
@@ -40,9 +40,9 @@ window.onscroll = function() {
         }
     }
     
-    candidate.style.borderColor = "red";
-    candidate.style.borderWidth = "5px";
-    candidate.style.borderStyle = "solid";
+//     candidate.style.borderColor = "red";
+//     candidate.style.borderWidth = "5px";
+//     candidate.style.borderStyle = "solid";
     if(candidate.offsetTop - window.pageYOffset < (window.innerHeight / 2)) {
         candidate.classList.add("scrollsnap");
     }
