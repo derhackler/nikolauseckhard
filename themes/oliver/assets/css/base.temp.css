@@ -66,6 +66,10 @@ figure {
   line-height: 1em;
 }
 
+figure img {
+    padding-bottom: 150px;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -209,8 +213,11 @@ a {
 }
 
 .show-as-background {
-  display: block !important;
-  max-height: 70vh;
+   display: block !important;
+}
+
+.show-as-background img {
+    max-height: 70vh;
 }
 
 .background-content {
