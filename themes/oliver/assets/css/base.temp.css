@@ -1,5 +1,6 @@
 html {
       scroll-snap-type: y mandatory;
+      scroll-padding-top: 80px;
 }
 body {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -67,7 +68,7 @@ figure {
 }
 
 figure img {
-    padding-bottom: 150px;
+    margin-bottom: 150px;
 }
 
 a {
