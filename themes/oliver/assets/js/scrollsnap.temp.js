@@ -22,30 +22,44 @@ window.onscroll = function() {
     var galleryImages = document.querySelectorAll("figure img");
     var viewportImages =[];
     for (var i = 0; i < galleryImages.length; i++) {
-//         galleryImages[i].style.borderWidth = "0px";
-        galleryImages[i].classList.remove("scrollsnap");
-        if(galleryImages[i].offsetTop > (window.pageYOffset) > 0 && isElementInViewport(galleryImages[i]))
+//        galleryImages[i].style.borderWidth = "0px";
+//        galleryImages[i].classList.remove("scrollTransition");
+        if(isElementInViewport(galleryImages[i]))
             viewportImages.push(galleryImages[i]);
+        else {
+                galleryImages[i].style.position = "relative";
+                galleryImages[i].style.top = "0px";
+        }
+           
     }
     
-    var minTop = 9999;
-    var candidate;
+    var maxTop = 0;
+    var candidate = null;
     for(var i = 0; i < viewportImages.length; i++) {
         var top = viewportImages[i].offsetTop;
 
-        if(top > 0 && minTop > top) {
-                    console.log(top);
-            minTop = top;
+        if((top - window.pageYOffset) > 0 && maxTop < top) {
+            maxTop = top;
             candidate = viewportImages[i];
         }
     }
     
-//     candidate.style.borderColor = "red";
-//     candidate.style.borderWidth = "5px";
-//     candidate.style.borderStyle = "solid";
-    if(candidate.offsetTop - window.pageYOffset < (window.innerHeight / 2)) {
-        candidate.classList.add("scrollsnap");
-    }
-        
+    
+    if(candidate !== null && candidate.style.position !== "sticky" && (candidate.offsetTop - window.pageYOffset) < (window.innerHeight / 2)) {
+        var snappingImages = document.querySelectorAll("figure img");    
+         for (var i = 0; i < snappingImages.length; i++) {
+             if(snappingImages[i].style.position === "sticky") {
+//                snappingImages[i].style.position = "relative";
+                snappingImages[i].style.top = "-100vh";
+             } 
+         }
 
+
+//         candidate.style.borderColor = "red";
+//         candidate.style.borderWidth = "5px";
+//         candidate.style.borderStyle = "solid";
+         candidate.style.position = "sticky";
+         candidate.style.top = "80px";
+        
+    }
 };

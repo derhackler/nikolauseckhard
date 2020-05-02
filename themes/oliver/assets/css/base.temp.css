@@ -1,7 +1,10 @@
 html {
       scroll-snap-type: y mandatory;
       scroll-padding-top: 80px;
+      scroll-snap-points-y: repeat(100%);
+      scroll-behavior: smooth;
 }
+
 body {
   font-family: "Helvetica", "Arial", sans-serif;
   line-height: 1.6;
@@ -68,7 +71,12 @@ figure {
 }
 
 figure img {
-    margin-bottom: 150px;
+    padding-bottom: 80px;
+    position: relative;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    top: inherit;
+    transition: top 0.25s ease-in;
 }
 
 a {
@@ -256,9 +264,14 @@ article a {
     height: 13rem;
 }
 
-.scrollsnap {
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+.resetTransition {
+  position: relative; 
+}
+
+.scrollTransition {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;    
+  top: 80px;
 }
 
 /* .content-media-spacer { */
