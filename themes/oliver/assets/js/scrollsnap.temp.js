@@ -20,7 +20,10 @@ window.onscroll = function() {
     }
     
     var noneVisible = true;
-    $('p').each(function( index ) {
+    var p = $('p');
+    p.each(function( index ) {
+        if(index === p.length - 1)
+            return;
         noneVisible = noneVisible && !$(this).isInViewport();
     });
 
