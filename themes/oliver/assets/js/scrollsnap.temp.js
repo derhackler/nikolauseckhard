@@ -12,6 +12,7 @@ function isElementInViewport(el) {
 }
 
 window.onscroll = function() {
+    
     var galleryImages = document.querySelectorAll("figure img");
     var viewportImages =[];
     for (var i = 0; i < galleryImages.length; i++) {
@@ -23,21 +24,27 @@ window.onscroll = function() {
         }
         else {
             galleryImages[i].classList.remove("sticky");
+//             galleryImages[i].classList.remove("relative");
         }
            
     }
+    console.log(viewportImages.length);
     
-    var lower = null;
-    var maxTop = 0;
+    if(viewportImages.length == 1) {
+        viewportImages[0].classList.add("sticky");
+    } else {
     
-    for(var i = 0; i < viewportImages.length; i++) {
-        var top = viewportImages[i].getBoundingClientRect().top;
+        var lower = null;
+        var maxTop = 0;
 
-        if(maxTop < top) {
-            maxTop = top;
-            lower = viewportImages[i];
+        for(var i = 0; i < viewportImages.length; i++) {
+            var top = viewportImages[i].getBoundingClientRect().top;
+
+            if(maxTop < top) {
+                maxTop = top;
+                lower = viewportImages[i];
+            }
         }
-    }
     
 //     var lower = null;
 //     var minTop = 99999;
@@ -57,7 +64,7 @@ window.onscroll = function() {
 //         lower.style.borderColor = "red";
 //         lower.style.borderStyle = "solid";
 //         }
-//         
+        
         if(lower !== null && (lower.getBoundingClientRect().top < (window.innerHeight - 160))) {
                   for (var i = 0; i < viewportImages.length; i++) {
                     if(viewportImages[i].classList.contains("sticky")) {
@@ -68,6 +75,8 @@ window.onscroll = function() {
                 }
                 lower.classList.remove("relative");
                 lower.classList.add("sticky");
-                
+//                 setTimeout(2000, function() { lower.classList.remove("fixed"); lower.classList.add("sticky"); });
+              
         }
+    }
 };
