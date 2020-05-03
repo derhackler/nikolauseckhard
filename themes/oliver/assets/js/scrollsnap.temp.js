@@ -2,7 +2,6 @@
         $(function() {
           $.scrollify({
             section : "figure img",
-            setHeights: false,
-            offset : -80
+            setHeights: false
           });
         });

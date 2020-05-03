@@ -65,9 +65,8 @@ figure {
 }
 
 figure img {
-    margin-bottom: 80px;
-    height: 80vh;
-    top: 80px;
+    padding-top: 80px;
+    height: calc(100vh - 320);
 }
 
 a {
