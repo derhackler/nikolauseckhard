@@ -65,8 +65,12 @@ figure {
 }
 
 figure img {
-    padding-top: 80px;
-    height: calc(100vh - 320);
+    padding-top: 10vh;
+    height: 90vh;
+    max-height: 90vh;
+    object-fit: contain;
+    max-width: 70vw;
+    overflow: show;
 }
 
 a {
@@ -160,8 +164,9 @@ a {
 }
 
 .u-wrapper {
-  margin: auto;
-  max-width: 42rem;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  max-width: 70vw;
 }
 
 .u-padding {
@@ -191,6 +196,16 @@ a {
   margin-block-end: 0em;
 }
 
+
+article header {
+  margin-left: 10vw;
+  width: 50vw;
+}
+
+article p {
+  margin-left: 10vw;
+  width: 50vw;
+}
 
 .background-image2{
   display: flex;
