@@ -71,7 +71,7 @@ figure {
 }
 
 figure img {
-    margin-bottom: 160px;
+    margin-bottom: 320px;
     scroll-snap-align: center;
     scroll-snap-stop: always;
     height: 80vh;

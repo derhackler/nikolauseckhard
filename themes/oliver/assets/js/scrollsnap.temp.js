@@ -65,7 +65,7 @@ window.onscroll = function() {
 //         lower.style.borderStyle = "solid";
 //         }
         
-        if(lower !== null && (lower.getBoundingClientRect().top < (window.innerHeight - 160))) {
+        if(lower !== null && (lower.getBoundingClientRect().top < (window.innerHeight - 320))) {
                   for (var i = 0; i < viewportImages.length; i++) {
                     if(viewportImages[i].classList.contains("sticky")) {
                         viewportImages[i].classList.remove("sticky");
