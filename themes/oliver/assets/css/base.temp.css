@@ -71,13 +71,31 @@ figure {
 }
 
 figure img {
-    padding-bottom: 80px;
-    position: relative;
+    margin-bottom: 320px;
     scroll-snap-align: center;
     scroll-snap-stop: always;
-    top: inherit;
-    transition: top 0.25s ease-in;
+    position: relative;
+    height: 90vh;
+    top: 80px;
+    transition: top 2s ease-out;
+/*         transition: position 2s ease-out; */
+
 }
+
+.static {
+    position: static;
+    top: 80px;
+}
+.relative {
+    position: relative;
+    top: -100vh;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+}
+
 
 a {
   color: black;
@@ -262,16 +280,6 @@ article a {
 
 .spacer {
     height: 13rem;
-}
-
-.resetTransition {
-  position: relative; 
-}
-
-.scrollTransition {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;    
-  top: 80px;
 }
 
 /* .content-media-spacer { */

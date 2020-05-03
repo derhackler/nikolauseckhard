@@ -1,21 +1,14 @@
 function isElementInViewport(el) {
-  var top = el.offsetTop;
-  var left = el.offsetLeft;
-  var width = el.offsetWidth;
-  var height = el.offsetHeight;
+    const rect = el.getBoundingClientRect();
+    // DOMRect { x: 8, y: 8, width: 100, height: 100, top: 8, right: 108, bottom: 108, left: 8 }
+    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+    const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
 
-  while(el.offsetParent) {
-    el = el.offsetParent;
-    top += el.offsetTop;
-    left += el.offsetLeft;
-  }
+    // http://stackoverflow.com/questions/325933/determine-whether-two-date-ranges-overlap
+    const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
+    const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
 
-  return (
-    top < (window.pageYOffset + window.innerHeight) &&
-    left < (window.pageXOffset + window.innerWidth) &&
-    (top + height) > window.pageYOffset &&
-    (left + width) > window.pageXOffset
-  );
+    return (vertInView && horInView);
 }
 
 window.onscroll = function() {
@@ -24,42 +17,57 @@ window.onscroll = function() {
     for (var i = 0; i < galleryImages.length; i++) {
 //        galleryImages[i].style.borderWidth = "0px";
 //        galleryImages[i].classList.remove("scrollTransition");
-        if(isElementInViewport(galleryImages[i]))
+        if(isElementInViewport(galleryImages[i])) {
             viewportImages.push(galleryImages[i]);
+            galleryImages[i].style.borderWidth = "0px";
+        }
         else {
-                galleryImages[i].style.position = "relative";
-                galleryImages[i].style.top = "0px";
+            galleryImages[i].classList.remove("sticky");
         }
            
     }
     
+    var lower = null;
     var maxTop = 0;
-    var candidate = null;
+    
     for(var i = 0; i < viewportImages.length; i++) {
-        var top = viewportImages[i].offsetTop;
+        var top = viewportImages[i].getBoundingClientRect().top;
 
-        if((top - window.pageYOffset) > 0 && maxTop < top) {
+        if(maxTop < top) {
             maxTop = top;
-            candidate = viewportImages[i];
+            lower = viewportImages[i];
         }
     }
     
-    
-    if(candidate !== null && candidate.style.position !== "sticky" && (candidate.offsetTop - window.pageYOffset) < (window.innerHeight / 2)) {
-        var snappingImages = document.querySelectorAll("figure img");    
-         for (var i = 0; i < snappingImages.length; i++) {
-             if(snappingImages[i].style.position === "sticky") {
-//                snappingImages[i].style.position = "relative";
-                snappingImages[i].style.top = "-100vh";
-             } 
-         }
+//     var lower = null;
+//     var minTop = 99999;
+//     
+//     for(var i = 0; i < viewportImages.length; i++) {
+//         var top = viewportImages[i].getBoundingClientRect().top;
+// 
+//         if(minTop > top) {
+//             minTop = top;
+//             lower = viewportImages[i];
+//         }
+//     }
 
-
-//         candidate.style.borderColor = "red";
-//         candidate.style.borderWidth = "5px";
-//         candidate.style.borderStyle = "solid";
-         candidate.style.position = "sticky";
-         candidate.style.top = "80px";
         
-    }
+//         if(lower != null) {
+//         lower.style.borderWidth = "5px";
+//         lower.style.borderColor = "red";
+//         lower.style.borderStyle = "solid";
+//         }
+//         
+        if(lower !== null && (lower.getBoundingClientRect().top < (window.innerHeight - 160))) {
+                  for (var i = 0; i < viewportImages.length; i++) {
+                    if(viewportImages[i].classList.contains("sticky")) {
+                        viewportImages[i].classList.remove("sticky");
+                        viewportImages[i].classList.add("relative");
+                    }
+              
+                }
+                lower.classList.remove("relative");
+                lower.classList.add("sticky");
+                
+        }
 };
