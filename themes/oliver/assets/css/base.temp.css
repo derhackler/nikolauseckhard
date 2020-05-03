@@ -1,8 +1,18 @@
 html {
       scroll-snap-type: y mandatory;
       scroll-padding-top: 80px;
-      scroll-snap-points-y: repeat(100%);
       scroll-behavior: smooth;
+-webkit-scroll-snap-type: y mandatory;
+-ms-scroll-snap-type: y mandatory;
+/* scroll-snap-type: mandatory; */
+-webkit-scroll-behavior: smooth;
+-ms-scroll-behavior: smooth;
+/* scroll-behavior: smooth; */
+-webkit-scroll-snap-points-y: repeat(50%);
+-ms-scroll-snap-points-y: snapInterval(0px, 50%); /* Old syntax */
+scroll-snap-points-y: repeat(50%);
+overflow-y: auto;
+   
 }
 
 body {
