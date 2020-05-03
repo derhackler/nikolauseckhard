@@ -69,6 +69,8 @@ figure img {
     max-height: 90vh;
     object-fit: contain;
     max-width: 60vw;
+    display: list-item;
+    margin:auto;
 }
 
 a {
@@ -202,7 +204,7 @@ article header {
 
 article p {
   margin-left: 10vw;
-  width: 50vw;
+  max-width: 50vw;
 }
 
 .background-image2{
