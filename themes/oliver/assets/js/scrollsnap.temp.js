@@ -14,25 +14,26 @@ window.onscroll = function() {
             $.scrollify({
             section : "figure img",
             updateHash: false,
+            interstitialSection: "header, p, .spacer"
             });
         });
         initialized = true;
     }
     
-    var noneVisible = true;
-    var p = $('p');
-    p.each(function( index ) {
-        if(index === p.length - 1)
-            return;
-        noneVisible = noneVisible && !$(this).isInViewport();
-    });
-
-    if(noneVisible) {
-        if($.scrollify.isDisabled())
-            $.scrollify.enable();
-    } else {
-        if(!$.scrollify.isDisabled())
-            $.scrollify.disable();
-    }
+//     var noneVisible = true;
+//     var p = $('p');
+//     p.each(function( index ) {
+//         if(index === p.length - 1)
+//             return;
+//         noneVisible = noneVisible && !$(this).isInViewport();
+//     });
+// 
+//     if(noneVisible) {
+//         if($.scrollify.isDisabled())
+//             $.scrollify.enable();
+//     } else {
+//         if(!$.scrollify.isDisabled())
+//             $.scrollify.disable();
+//     }
 
 }
