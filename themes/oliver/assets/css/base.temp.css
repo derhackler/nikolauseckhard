@@ -66,11 +66,9 @@ figure {
 
 figure img {
     padding-top: 10vh;
-    height: 90vh;
     max-height: 90vh;
     object-fit: contain;
-    max-width: 70vw;
-    overflow: show;
+    max-width: 60vw;
 }
 
 a {
