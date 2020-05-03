@@ -17,6 +17,8 @@
   <link rel="canonical" href="{{ .Permalink }}">
   {{ resources.Get "css/base.temp.css" | resources.ExecuteAsTemplate "css/base.css" . | minify | fingerprint | .Page.Scratch.SetInMap "css" "base" }}
   {{ resources.Get "js/mobilescroll.temp.js" | resources.ExecuteAsTemplate "js/mobilescroll.js" . | minify | fingerprint | .Page.Scratch.SetInMap "js" "mobilescroll" }}
+  {{ resources.Get "js/jquery-3.5.0.temp.js" | resources.ExecuteAsTemplate "js/jquery-3.5.0.js" . | fingerprint | .Page.Scratch.SetInMap "js" "jquery" }}
+  {{ resources.Get "js/jquery.scrollify.temp.js" | resources.ExecuteAsTemplate "js/jquery.scrollify.js" . | fingerprint | .Page.Scratch.SetInMap "js" "scrollify" }}
   {{ resources.Get "js/scrollsnap.temp.js" | resources.ExecuteAsTemplate "js/scrollsnap.js" . | fingerprint | .Page.Scratch.SetInMap "js" "scollsnap" }}
   
   {{ block "loadshortcodes" . }}{{ with .Content }}{{ end }}{{ end }}
