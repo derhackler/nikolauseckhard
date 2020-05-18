@@ -12,9 +12,7 @@ The dog´s movements, which are initially smooth, become increasingly distorted;
 
 Crew
 Mark Gerstorfer, Anna Manhardt, Beate Bergolth, Severin Fiala, Johann Lurf, Thomas Rögelsperger, Valentin Fiala, Benedikt Eckhard, Max Limbeck 
-
 {{<space>}}
-
 {{<figure figcaption="" >}}
   {{<img src=RZH_hp.jpg alt="alt text" >}}
 {{</figure >}}
