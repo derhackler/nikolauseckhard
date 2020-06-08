@@ -1,4 +1,7 @@
-
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;    
+}
 body {
   font-family: "Helvetica", "Arial", sans-serif;
   line-height: 1.6;
@@ -58,6 +61,7 @@ h4 {
   font-weight: normal;
   margin-block-start: 0.6em;
 }
+
 figure {
   font-size: 1rem;
   text-align: center;
@@ -65,18 +69,26 @@ figure {
 }
 
 figure img {
-    padding-top: 80px;
+    margin-top: 210px;
+    margin-bottom: 10px;
     object-fit: contain;
-    max-height: 100vh;
+    max-height: 70vh;
     max-width: 60vw;
     display: list-item;
-    margin: auto;
+    margin: 210px auto 10px auto;
+    scroll-snap-align: start;
 }
+
+figcaption {
+    margin-top: 10px;
+}
+
 
 a {
   color: black;
   text-decoration: none;
 }
+
 
 .Banner {
   list-style: none;
@@ -422,4 +434,13 @@ ul.tags li{
 .wrapper img {
 	-webkit-filter: grayscale(100%) !important;
 	filter: grayscale(100%) !important;
+}
+
+#scrollToTopBtn { 
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 210px auto 210px auto;
 }
