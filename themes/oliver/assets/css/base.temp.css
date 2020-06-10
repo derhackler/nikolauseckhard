@@ -1,6 +1,6 @@
 html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;    
+  /* scroll-behavior: smooth; */
+  /* scroll-snap-type: y mandatory;     */
 }
 body {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -76,7 +76,7 @@ figure img {
     max-width: 60vw;
     display: list-item;
     margin: 210px auto 10px auto;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 figcaption {

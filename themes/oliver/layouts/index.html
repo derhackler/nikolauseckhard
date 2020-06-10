@@ -24,7 +24,7 @@
 
 
 {{define "in_header"}}
-
+{{ resources.Get "js/mobilescroll.temp.js" | resources.ExecuteAsTemplate "js/mobilescroll.js" . | minify | fingerprint | .Page.Scratch.SetInMap "js" "mobilescroll" }}
 {{end}}
 
 
