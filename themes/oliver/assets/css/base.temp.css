@@ -54,7 +54,10 @@ h1 {
 h2 {
   font-size: 1rem;
   font-weight: normal;
-
+}
+h3 {
+    font-size: 1rem;
+    font-weight: normal;
 }
 h4 {
   font-size: 1rem;
@@ -328,24 +331,23 @@ ul.tags li{
 /* about page */
 .about {
   columns: 1;
+  margin: auto;
+  max-width: 50vw;
 }
-@media (min-width: 992px)
-{
-  .about {
-    columns: 2;
-  }
-}
-@media (min-width: 1200px)
-{
-  .about {
-    columns: 3;
-  }
-}
-
+/* ul, menu, dir { */
+/*     display: block; */
+/*     list-style-type: disc; */
+/*     margin-block-start: 1em; */
+/*     margin-block-end: 1em; */
+/*     margin-inline-start: 0px; */
+/*     margin-inline-end: 0px; */
+/*     padding-inline-start: 40px; */
+/* } */
 .about ul {
   list-style-type: none;
   padding-left: 0;
   margin-top:0;
+  margin-block-end: 0em;
 }
 .about h1 {
   margin-top: 2rem;
@@ -353,7 +355,22 @@ ul.tags li{
 .about h2 {
   margin-bottom: 0;
 }
+.about h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
 
+.about { 
+    margin: auto;
+}
+
+@media (max-width: 1200px)
+{
+    .about {
+        max-width: 90vw;
+        margin: auto;
+    }
+}
 
 /* index view */
 * {
