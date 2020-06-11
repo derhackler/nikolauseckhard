@@ -29,8 +29,9 @@ run `hugo server -D` in your source directory
 
 ## Deploying
 
-the changes are deployed bz [render](render.com) automatically on push to `master` and
-are available at https://nikolaus-eckhard.onrender.com
+Changes are deployed via the github pipeline "CD" workflow on every push to https://nikolauseckhard.at/draft.
+
+When the tag "release" gets set to a revision, this revision will be deployed to https://nikolauseckhard.at.
 
 ## How to Contribute
 
