@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.LanguageCode }}">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,8 @@
   </title>
   <link rel="canonical" href="{{ .Permalink }}">
   {{ resources.Get "css/base.temp.css" | resources.ExecuteAsTemplate "css/base.css" . | minify | fingerprint | .Page.Scratch.SetInMap "css" "base" }}
+  {{ resources.Get "js/mobilescroll.temp.js" | resources.ExecuteAsTemplate "js/mobilescroll.js" . | minify | fingerprint | .Page.Scratch.SetInMap "js" "mobilescroll" }}
+
   {{ block "loadshortcodes" . }}{{ with .Content }}{{ end }}{{ end }}
   {{ range .Scratch.GetSortedMapValues "css" }}
   <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
@@ -25,16 +28,18 @@
   {{ end }}
   {{ block "in_header" . }}{{ end }}
 </head>
+
 <body>
   {{ partialCached "banner.html" . }}
-  
+
   <main>
 
-        {{ block "main" . }}{{ end }}
+    {{ block "main" . }}{{ end }}
 
   </main>
   {{ block "after_main" . }}{{ end }}
   {{ partialCached "footer.html" . }}
   <!-- <button onclick="topFunction()" id="scrollToTopBtn" title="Back to Top">Back to Top</button> -->
 </body>
+
 </html>

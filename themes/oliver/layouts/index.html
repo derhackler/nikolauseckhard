@@ -10,21 +10,20 @@
   .Scratch variable (see layout baseof.html).
 */}}
 {{ $paginator := where site.RegularPages "Type" "in" site.Params.mainSections | .Paginate }}
-  {{ range $paginator.Pages }}
-    {{ with .Content }}{{ end }}
-    {{ with .Scratch.Get "css" }}
-      {{ . | merge ($.Scratch.Get "css") | $.Scratch.Set "css" }}
-    {{ end }}
-    {{ with .Scratch.Get "js" }}
-      {{ . | merge ($.Scratch.Get "js") | $.Scratch.Set "js" }}
-    {{ end }}
-  {{ end }}
-  {{ .Scratch.Set "paginator" $paginator }}
+{{ range $paginator.Pages }}
+{{ with .Content }}{{ end }}
+{{ with .Scratch.Get "css" }}
+{{ . | merge ($.Scratch.Get "css") | $.Scratch.Set "css" }}
+{{ end }}
+{{ with .Scratch.Get "js" }}
+{{ . | merge ($.Scratch.Get "js") | $.Scratch.Set "js" }}
+{{ end }}
+{{ end }}
+{{ .Scratch.Set "paginator" $paginator }}
 {{ end }}
 
 
 {{define "in_header"}}
-{{ resources.Get "js/mobilescroll.temp.js" | resources.ExecuteAsTemplate "js/mobilescroll.js" . | minify | fingerprint | .Page.Scratch.SetInMap "js" "mobilescroll" }}
 {{end}}
 
 
@@ -34,93 +33,93 @@
 
 
 <div class="articles">
-<div class="spacer"></div>
+  <div class="spacer"></div>
 
-{{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
 
-<article id="{{ .File.UniqueID }}">
-  <a class="homepageprojectlink" href="{{ .Permalink }}" rel="bookmark">
-    <header>
-      <h2>
-        {{ .Title }}
-      </h2>
-    </header>
-  </a>
-</article>
+  <article id="{{ .File.UniqueID }}">
+    <a class="homepageprojectlink" href="{{ .Permalink }}" rel="bookmark">
+      <header>
+        <h2>
+          {{ .Title }}
+        </h2>
+      </header>
+    </a>
+  </article>
 
-{{ end }}
+  {{ end }}
 
-<div class="content-media-spacer"></div>
+  <div class="content-media-spacer"></div>
 </div>
 
 <script>
-let currentElem = null;
-let articles = document.querySelector(".articles");
+  let currentElem = null;
+  let articles = document.querySelector(".articles");
 
-// event bubbling code from: https://javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave
+  // event bubbling code from: https://javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave
 
-articles.addEventListener("mouseover", function(event){
-  if (currentElem) return;
-  let target = event.target.closest('article');
-  if (!target) return;
-  if (!articles.contains(target)) return;
-  currentElem = target;
-  onEnter(currentElem);
-});
-articles.addEventListener("mouseout", function(event){
-  if (!currentElem) return;
-  let relatedTarget = event.relatedTarget;
-  while (relatedTarget) {
-    if (relatedTarget == currentElem) return;
-    relatedTarget = relatedTarget.parentNode;
+  articles.addEventListener("mouseover", function (event) {
+    if (currentElem) return;
+    let target = event.target.closest('article');
+    if (!target) return;
+    if (!articles.contains(target)) return;
+    currentElem = target;
+    onEnter(currentElem);
+  });
+  articles.addEventListener("mouseout", function (event) {
+    if (!currentElem) return;
+    let relatedTarget = event.relatedTarget;
+    while (relatedTarget) {
+      if (relatedTarget == currentElem) return;
+      relatedTarget = relatedTarget.parentNode;
+    }
+    onLeave(currentElem);
+    currentElem = null;
+  });
+
+  function onEnter(elem) {
+    let bgcontent = document.querySelector(`#background-for-${elem.id}`);
+    if (!bgcontent) return;
+    bgcontent.classList.add("show-as-background");
   }
-  onLeave(currentElem);
-  currentElem = null;
-});
 
-function onEnter(elem){
-  let bgcontent = document.querySelector(`#background-for-${elem.id}`);
-  if(!bgcontent) return;
-  bgcontent.classList.add("show-as-background");
-}
-
-function onLeave(elem){
-  let bgcontent = document.querySelector(`#background-for-${elem.id}`);
-  if(!bgcontent) return;
-  bgcontent.classList.remove("show-as-background");
-}
+  function onLeave(elem) {
+    let bgcontent = document.querySelector(`#background-for-${elem.id}`);
+    if (!bgcontent) return;
+    bgcontent.classList.remove("show-as-background");
+  }
 
 
-function changeColor(x){
-  var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
-  x.style.backgroundColor = rndCol;
-}
+  function changeColor(x) {
+    var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+    x.style.backgroundColor = rndCol;
+  }
 
-function random(number) {
-  return Math.floor(Math.random()*(number+1));
-}
+  function random(number) {
+    return Math.floor(Math.random() * (number + 1));
+  }
 
 </script>
 {{ end }}
 
 {{ define "after_main"}}
 <div class="page-centered-element">
-    <div class="content">
-      {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
-      {{ $imgpath := path.Join .File.Dir .Params.image }}
-      {{ $contentid := .File.UniqueID }}
-      {{ with .Params.image }}
-          {{ if fileExists $imgpath }}
-              {{ with resources.Get $imgpath }}
-                  {{ $thumb := (.Resize "720x").RelPermalink }}
-                  <div class="background-content" id="background-for-{{ $contentid }}">
-                    <img src="{{ $thumb }}">
-                  </div>
-              {{ end }}
-          {{ end }}
-      {{ end }}
-
-{{ end }}
+  <div class="content">
+    {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ $imgpath := path.Join .File.Dir .Params.image }}
+    {{ $contentid := .File.UniqueID }}
+    {{ with .Params.image }}
+    {{ if fileExists $imgpath }}
+    {{ with resources.Get $imgpath }}
+    {{ $thumb := (.Resize "720x").RelPermalink }}
+    <div class="background-content" id="background-for-{{ $contentid }}">
+      <img src="{{ $thumb }}">
     </div>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
+    {{ end }}
   </div>
+</div>
 {{end}}
