@@ -1,0 +1,33 @@
+name: Release
+
+on:
+  push:
+    tags: release
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Hugo setup
+      uses: peaceiris/actions-hugo@v2.3.2
+    - name: compile hugo page
+      run: hugo -D -b https://nikolauseckhard.at/
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      env:
+        # FTP server name (you may need to specify a port)
+        FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        # FTP account username
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        # FTP account password
+        FTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+        # Protocol used to deploy (ftp or sftp)
+        METHOD: sftp
+        # The port used to connect to server
+        PORT: 22
+        # The local folder to copy, defaults to root project folder
+        LOCAL_DIR: public
+        ARGS: --delete --verbose --transfer-all
