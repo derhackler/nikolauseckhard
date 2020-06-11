@@ -336,6 +336,10 @@ ul.tags li{
   line-height: 1;
 }
 
+.about .content-media-spacer {
+  height: 15rem;
+}
+
 .about ul {
   list-style-type: none;
   padding-left: 0;
