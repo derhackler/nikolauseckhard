@@ -31,7 +31,13 @@ run `hugo server -D` in your source directory
 
 Changes are deployed via the github pipeline "CD" workflow on every push to https://nikolauseckhard.at/draft.
 
-When the tag "release" gets set to a revision, this revision will be deployed to https://nikolauseckhard.at.
+When the tag "release" gets set to a revision, this revision will be deployed to https://nikolauseckhard.at. To tag the release do this:
+
+```
+git push origin :refs/tags/release
+git tag -fa release
+git push origin master --tags
+```
 
 
 ## How to Contribute
@@ -46,3 +52,4 @@ When the tag "release" gets set to a revision, this revision will be deployed to
 * kaushalmodi for his [answer on rendering a/b as fraction](https://discourse.gohugo.io/t/solved-how-to-prevent-a-text-character-from-being-transformed/13850).
 * robinsblog for the [grayscale css effect](https://robinroelofsen.com/change-images-grayscale-color-hover)
 * sol at stackoverflow for the [line in between the grid rows](https://stackoverflow.com/questions/50769251/border-after-each-row-in-css-grid)
+* Bat-Chat on github on how to [override a github tag](https://gist.github.com/Bat-Chat/1d27ce1b5074a83ef8d43524c19b11b8)
