@@ -198,8 +198,9 @@ a {
   border-bottom: 2px solid black;
 }
 
-article { 
-  margin: auto;
+article {
+    margin: auto;
+    margin-bottom: 15rem;
 }
 
 article p {
@@ -333,7 +334,7 @@ ul.tags li{
   columns: 1;
   margin: auto;
   max-width: 50vw;
-  line-height: 1;
+  line-height: 1.6;
 }
 
 .about .content-media-spacer {
