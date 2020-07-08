@@ -13,7 +13,6 @@ bone factory is a private installation within an exhibition setting. A white ten
 {{<figure figcaption="" >}}
   {{<img src=bonefactory_hp(1).jpg alt="alt text" >}}
   {{<img src=bonefactory_hp(2).jpg alt="alt text" >}}
-  {{<img src=bonefactory_hp(3).jpg alt="alt text" >}}
   {{<img src=bonefactory_hp(5).jpg alt="alt text" >}}
   {{<img src=bonefactory_hp(6).jpg alt="alt text" >}}
   {{<img src=bonefactory_hp(7).jpg alt="alt text" >}}
