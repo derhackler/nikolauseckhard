@@ -1,5 +1,5 @@
 ---
-title: "bone facatory"
+title: "bone factory"
 date: 2020-01-20T20:51:21+01:00
 draft: true
 tags: ["Skulptur", "Performance", "Beton"]
