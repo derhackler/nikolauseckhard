@@ -12,7 +12,7 @@ With the help of: Ronald Zechner
 
 {{<space>}}
 
-{{<figure figcaption="caption text" >}}
+{{<figure figcaption="" >}}
   {{<img src=dolo_hp(1).jpg alt="alt text" >}}
   {{<img src=dolo_hp(2).jpg alt="alt text" >}}
   {{<img src=dolo_hp(3).jpg alt="alt text" >}}
