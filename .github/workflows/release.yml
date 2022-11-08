@@ -38,7 +38,7 @@ jobs:
           # The local folder to copy, defaults to root project folder
           local-dir: ./public/
           log-level: standard
-          protocol: sftp
+          protocol: ftp
           #ARGS: --delete --verbose --transfer-all
 
 
