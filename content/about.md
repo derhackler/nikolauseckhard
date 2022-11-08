@@ -132,4 +132,4 @@ Bachelor Degree
 * Vienna (AT) – Raum-Zeit -Hund sixpackfilm screening
 
 {{<space>}}
-© 2020 Nikolaus Eckhard
+© 2022 Nikolaus Eckhard
