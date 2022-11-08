@@ -23,22 +23,22 @@ jobs:
         run: hugo -D -b https://www.nikolauseckhard.at/
 
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@4.3.2
-        with:
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0
+        env:
           # FTP server name (you may need to specify a port)
-          server: ${{ secrets.FTP_SERVER }}
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
           # FTP account username
-          username: ${{ secrets.FTP_USERNAME }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           # FTP account password
-          password: ${{ secrets.SFTP_PASSWORD }}
+          FTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
           # Protocol used to deploy (ftp or sftp)
-          # METHOD: sftp
+          METHOD: sftp
           # The port used to connect to server
-          port: 22
+          PORT: 22
           # The local folder to copy, defaults to root project folder
-          local-dir: ./public/
-          log-level: standard
-          protocol: ftp
-          #ARGS: --delete --verbose --transfer-all
+          LOCAL_DIR: public
+          # The remote folder to copy to, deafults to root FTP folder (I recommend you configure this on your server side instead of here)
+          REMOTE_DIR: draft
+          ARGS: --delete --verbose --transfer-all
 
 
