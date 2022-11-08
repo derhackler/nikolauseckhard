@@ -36,7 +36,7 @@ jobs:
           # The port used to connect to server
           port: 22
           # The local folder to copy, defaults to root project folder
-          local-dir: public
+          local-dir: ./public/
           log-level: standard
           protocol: ftps
           #ARGS: --delete --verbose --transfer-all
