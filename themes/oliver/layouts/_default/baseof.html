@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {{ hugo.Generator }}
+  <meta http-equiv="Cache-Control" content="max-age=600, must-revalidate">
+
   {{ if site.Params.schema }}{{ template "_internal/schema.html" . }}{{ end }}
   {{ if site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
   {{ if site.Params.twittercards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
