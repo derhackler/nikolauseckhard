@@ -19,6 +19,7 @@ Bachelor Degree
 
 # AWARDS, GRANTS
 
+* Startstipendium for Fine Arts of the Federal Ministry Republic of Austria 2020 
 * Honorary Award of the Academy of fine Arts Vienna 2017
 * Forein Study Scholarship for Students by the Federal Ministry for Science and Research 2012/13
 
