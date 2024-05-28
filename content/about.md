@@ -25,6 +25,29 @@ Bachelor Degree
 
 # EXHIBITIONS
 
+## 2024
+* Vienna (AT) – Reverse Imagining Vienna, AIL
+* Vienna (AT) – die Feldversuche, Klimabiennale Wien (Upcoming)
+* Vienna (AT) - Feldversuche Symposium, Wiener Kunstsyposium zu Ernährung und Stadt (Upcoming)
+
+## 2023
+* Vienna  (AT) – Tuesday@Secession, Secession
+* Wachtberg (AT) – 30. Symposium Kunst in der Natur 
+* Vienna  (AT) – Protestformen – Blickle Kino 
+* Merkenbrechts (AT) – agri:kultur 
+
+## 2022
+* Paris (F) – Posthuman Rocks, L'École d'architecture de la ville & des territoires Paris-Est
+* Vienna (AT) - Feldversuche Symposium, Bildende Kunst zwischen Baustelle und Ackerfurche
+* Vienna (AT) – Lange Nacht der Forschung
+
+## 2021
+* Vienna (AT) – Vienna Biennale for Change, Museum für Angewandte Kunst Wien
+* Jerusalem (IL) - Inconcrete Stones, Art Cube Artists' Studios Jerusalem
+* Vienna (AT) – SIZE MATTERS, FENSTERGUCKER
+* Vienna (AT)/ online – Protestformenfestival Wien 
+* online – sixpack living collection: Tiere 
+
 ## 2020
 * Jerusalem (IL) - Manofim Jerusalem Contemporary Art Festival (Oct 2020)
 
