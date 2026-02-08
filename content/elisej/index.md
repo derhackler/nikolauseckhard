@@ -12,6 +12,10 @@ text schaukel und kirche und spass aber macht und gott und so
 
 {{<space>}}
 
-{{<figure src="img.JPG" title="a table" alt="a table">}}
+{{<figure figcaption="a table" >}}
+  {{<img src="img.JPG" alt="a table" >}}
+{{</figure >}}
 
-{{<figure src="img.JPG" title="another image">}}
+{{<figure figcaption="another image" >}}
+  {{<img src="img.JPG" alt="another image" >}}
+{{</figure >}}

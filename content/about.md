@@ -2,9 +2,7 @@
 title: "About Nikolaus Eckhard"
 date: 2019-11-01T20:51:21+01:00
 draft: true
-kind: About
-blackfriday:
-  smartypants: false
+markup: goldmark
 ---
 # KONTAKT
 
